@@ -1,11 +1,11 @@
 /*noinspection CssUnknownTarget*/
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
 :root {
-    --golden: #D09D01;
-    --red1: #A80035;
-    --red2: #D01D09;
-    --background-color: #1D1D1B;
+    --golden: #d09d01;
+    --red1: #a80035;
+    --red2: #d01d09;
+    --background-color: #1d1d1b;
     --button-shadow: #0003;
 }
 
@@ -32,6 +32,7 @@ body {
     grid-template-columns: repeat(4, 5rem);
     grid-template-rows: repeat(6, 5rem);
     padding: 30px;
+    margin: 0 auto;
 }
 
 .output {
@@ -73,7 +74,8 @@ button {
     grid-column: span 2;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     box-shadow: 0 11px 0 0 var(--button-shadow);
     transform: translateY(1px);
 }
@@ -81,4 +83,10 @@ button:hover, button:focus {
 button:active {
     box-shadow: 0 5px 0 0 var(--button-shadow);
     transform: translateY(7px);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
 }
