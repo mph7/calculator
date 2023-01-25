@@ -4,8 +4,8 @@
 
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
-import { ACTIONS } from "../App";
-import OperationButton from "../OperationButton.jsx";
+import { ACTIONS } from "../src/App.jsx";
+import OperationButton from "../src/OperationButton.jsx";
 
 describe("OperationButton component", () => {
   test.each(["+", "-", "*", "÷"])(

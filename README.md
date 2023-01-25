@@ -7,6 +7,8 @@ user-friendly interface on all platforms.
 
 ## Check the website [Here.](https://calcmaster.netlify.app/)
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mph7_calculator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mph7_calculator)
+
 **Technologies used:**
 
 - React

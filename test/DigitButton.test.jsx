@@ -4,8 +4,8 @@
 
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
-import DigitButton from "../DigitButton";
-import { ACTIONS } from "../App";
+import DigitButton from "../src/DigitButton.jsx";
+import { ACTIONS } from "../src/App.jsx";
 
 describe("DigitButton component", () => {
   test.each([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "."])(

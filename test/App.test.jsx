@@ -4,7 +4,7 @@
 
 import React, { useReducer } from "react";
 import { cleanup, fireEvent, render, renderHook } from "@testing-library/react";
-import App, { ACTIONS, evaluate, formatOperand, reducer } from "../App";
+import App, { ACTIONS, evaluate, formatOperand, reducer } from "../src/App.jsx";
 import { act } from "react-test-renderer";
 
 afterEach(cleanup);
