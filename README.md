@@ -7,12 +7,12 @@ user-friendly interface on all platforms.
 
 ## Check the website [Here.](https://calcmaster.netlify.app/)
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mph7_calculator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mph7_calculator)
+[![Coverage Status](https://coveralls.io/repos/github/mph7/simplecalc/badge.svg?branch=main)](https://coveralls.io/github/mph7/simplecalc?branch=main)
 
 **Technologies used:**
 
-- React
-- Jest/React Testing Library
+-   React
+-   Jest/React Testing Library
 
 **Configuration:**
 
