@@ -11,7 +11,7 @@ export const ACTIONS = {
   EVALUATE: "evaluate",
 };
 
-function reducer(state, { type, payload }) {
+export function reducer(state, { type, payload }) {
   switch (type) {
     case ACTIONS.ADD_DIGIT:
       if (state.overwrite) {
@@ -99,10 +99,12 @@ function reducer(state, { type, payload }) {
         currentOperand: evaluate(state),
         overwrite: true,
       };
+    default:
+      return state;
   }
 }
 
-function evaluate({ currentOperand, previousOperand, operation }) {
+export function evaluate({ currentOperand, previousOperand, operation }) {
   const prev = parseFloat(previousOperand);
   const current = parseFloat(currentOperand);
   let calc;
@@ -127,8 +129,7 @@ const NUMBER_FORMATTER = Intl.NumberFormat("en-us", {
   maximumFractionDigits: 0,
 });
 
-function formatOperand(operand) {
-  console.log(operand);
+export function formatOperand(operand) {
   if (operand == null) return;
   const [integer, decimal] = operand.split(".");
   if (decimal == null) return NUMBER_FORMATTER.format(integer);
@@ -143,11 +144,11 @@ function App() {
 
   return (
     <div className="calculator-grid">
-      <div className="output">
-        <div>
+      <div className="output" data-testid="output">
+        <div data-testid="previous">
           {formatOperand(previousOperand)} {operation}
         </div>
-        <div>{formatOperand(currentOperand)}</div>
+        <div data-testid="current">{formatOperand(currentOperand)}</div>
       </div>
       <button
         className="span-two"

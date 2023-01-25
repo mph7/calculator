@@ -1,6 +1,7 @@
 # CalcMaster
 
-CalcMaster is a basic calculator app built with React for easy and efficient use. Perform basic math operations with its user-friendly interface on all platforms.
+CalcMaster is a basic calculator app built with React for easy and efficient use. Perform basic math operations with its
+user-friendly interface on all platforms.
 
 ![App Screenshot](https://user-images.githubusercontent.com/85843263/213871783-2a54e4cc-d4a0-4cb1-bab6-f0a59eb75621.png)
 
@@ -9,6 +10,7 @@ CalcMaster is a basic calculator app built with React for easy and efficient use
 **Technologies used:**
 
 - React
+- Jest/React Testing Library
 
 **Configuration:**
 
